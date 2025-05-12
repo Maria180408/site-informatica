@@ -1,46 +1,76 @@
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f0fa; /* un mov foarte deschis */
+/* Resetarea stilurilor implicite */
+body, h1, p, ul, li {
     margin: 0;
     padding: 0;
-    color: #3d004d; /* text mov închis */
 }
 
-header {
-    background-color: #a678b4; /* mov mediu */
-    color: white;
-    padding: 20px;
+/* Setări generale pentru pagina web */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Fundal gri deschis */
+    color: #333; /* Culoare text standard */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     text-align: center;
 }
 
-section {
-    margin: 20px;
-    padding: 15px;
-    background-color: #ffffff; /* alb pentru contrast */
-    border: 2px solid #d9b3e6; /* mov pal */
-    border-radius: 8px;
-    box-shadow: 0 0 10px #d9b3e6;
+/* Container principal pentru a organiza conținutul */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    padding: 20px;
 }
 
-h2 {
-    color: #6a1b9a; /* mov intens */
+/* Stil pentru titlul principal */
+h1 {
+    font-size: 2.5em;
+    color: #4A4A4A; /* Culoare text titlu */
+}
+
+/* Stil pentru paragrafe */
+p {
+    font-size: 1.2em;
+    color: #666; /* Culoare text paragrafe */
+    margin-bottom: 20px;
+}
+
+/* Stiluri pentru lista de programe */
+.programs {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 1.2em;
 }
 
 a {
-    color: #800080; /* mov clasic */
     text-decoration: none;
+    color: #007BFF; /* Culoare linkuri */
 }
 
 a:hover {
-    text-decoration: underline;
-    color: #9b30ff; /* mov electric la hover */
+    color: #0056b3; /* Culoare linkuri la hover */
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #a678b4;
-    color: white;
-    margin-top: 20px;
+/* Stiluri pentru imagine */
+.image-container {
+    margin-top: 30px;
+}
+
+.image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
 }
